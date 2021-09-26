@@ -3,10 +3,10 @@ import connexion
 from flask import  Flask
 from swagger_ui import api_doc
 
-app = connexion.App(__name__, specification_dir='./')
+app = Flask(__name__) #connexion.App(__name__, specification_dir='./')
 
 # Read the swagger.yml file to configure the endpoints
-app.add_api('swagger.yml')
+# app.add_api('swagger.yml')
 
 api_doc(app,config_path='swagger.yml',url_prefix='/api/doc')
 # If we're running in stand alone mode, run the application
