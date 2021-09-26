@@ -1,4 +1,5 @@
 flask==1.1.4
 Werkzeug==1.0.1
 connexion==2.9.0 
-connexion[swagger-ui]
+swagger_ui_bundle==0.0.9
+connexion[swagger-ui]==3.52.0
