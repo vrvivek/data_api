@@ -4,7 +4,7 @@ from flask import  Flask
 from swagger_ui import api_doc
 
 app = Flask(__name__) #connexion.App(__name__, specification_dir='./')
-
+print('name',__name__)
 # Read the swagger.yml file to configure the endpoints
 # app.add_api('swagger.yml')
 
